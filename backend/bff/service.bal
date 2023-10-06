@@ -8,7 +8,7 @@ import ballerina/http;
 }
 service / on new http:Listener(9090) {
 
-    resource function get card\-details/[string userId]() returns error|()|CardDetails {
+    resource function get card\-details/[string userId]() returns error?|CardDetails {
         CardDetails cardDetails = {
             userId: userId,
             cardNumber: 1234567890123456,
