@@ -60,10 +60,10 @@ type CardDetails record {
     string userId;
     int cardNumber;
     int rewardPoints;
-    int currentBalance;
-    int dueAmount;
-    int lastStatementBalance;
-    int availableCredit;
+    float currentBalance;
+    float dueAmount;
+    float lastStatementBalance;
+    float availableCredit;
 };
 
 type RewardDetails record {
