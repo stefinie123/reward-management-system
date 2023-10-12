@@ -25,24 +25,28 @@ service / on new http:Listener(9090) {
         return [
             {
                 "name": "Target",
+                "logoUrl": "https://drive.google.com/file/d/1FEOGLEG99HsttPBXliXUi8aWYqnNmPH2/view?usp=drive_link",
                 "value": 25,
                 "totalPoints": 500,
                 "description": "A Target GiftCard is your opportunity to shop for thousands of items at more than 1,900 Target stores in the U.S., as well as Target.com. From home décor, small appliances and electronics to fashion, accessories and music, find exactly what you’re looking for at Target. No fees. No expiration. No kidding.™"
             },
             {
                 "name": "Starbucks Coffee",
+                "logoUrl": "https://drive.google.com/file/d/1nku2n63zXBfrA3Bf0eAVWqu45mFLnaRE/view?usp=drive_link",
                 "value": 15,
                 "totalPoints": 200,
                 "description": "Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant"
             },
             {
                 "name": "Jumba Juice",
+                "logoUrl": "https://drive.google.com/file/d/1khJX-N7N8xHrV5o9GvqsH7wApDoY8ej0/view?usp=drive_link",
                 "value": 6,
                 "totalPoints": 600,
                 "description": "Let Jamba come to you – wherever you are. Get our Whirld Famous smoothies, juices, and bowls delivered in just a few clicks. My Jamba rewards members can also apply rewards & earn points on delivery orders when you order on jamba.com or the jamba app!"
             },
             {
                 "name": "Grubhub",
+                "logoUrl": "https://drive.google.com/file/d/14S6olzLfOQJatEr4FkXyB_m1l31H2XyJ/view?usp=drive_link",
                 "value": 10,
                 "totalPoints": 500,
                 "description": "Grubhub offers quick, easy food delivery, either online or through a mobile app. Customers can select from any local participating restaurant. They can add whatever they like to their order and have it delivered right to their home or office by one of Grubhub's delivery drivers. You can save even more by using a Grubhub promo code on your order"
@@ -68,6 +72,7 @@ type CardDetails record {
 
 type RewardDetails record {
     string name;
+    string logoUrl;
     int value;
     int totalPoints;
     string description;
