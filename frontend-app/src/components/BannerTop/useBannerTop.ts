@@ -26,13 +26,6 @@ const useBannerTop = () => {
     variantOptions['Property1Desktop']
   );
 
-  React.useEffect(() => {
-    if (breakpointsVariant !== currentVariant) {
-      setCurrentVariant(breakpointsVariant);
-      console.log('asaas');
-    }
-  }, [breakpointsVariant]);
-
   const breakpointsVariant = useBannerTopResponsiveSize();
 
   React.useEffect(() => {
@@ -41,9 +34,17 @@ const useBannerTop = () => {
     }
   }, [breakpointsVariant]);
 
-  const data: any = { currentVariant, currentVariant };
+  
 
-  const fns: any = { setCurrentVariant, setCurrentVariant };
+  React.useEffect(() => {
+    if (breakpointsVariant !== currentVariant) {
+      setCurrentVariant(breakpointsVariant);
+    }
+  }, [breakpointsVariant]);
+
+  const data: any = { currentVariant };
+
+  const fns: any = { setCurrentVariant };
 
   return { data, fns };
 };

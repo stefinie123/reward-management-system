@@ -503,7 +503,7 @@ function BannerTop(props: BannerTopProps): JSX.Element {
               {false && <Underline4></Underline4>}
             </Link5>
             <Link6>
-              <InternalLink to="/Q3Rewards">
+              <InternalLink to="/rewards">
                 <Rewards>{`Rewards`}</Rewards>
               </InternalLink>
               {false && <Underline5></Underline5>}
