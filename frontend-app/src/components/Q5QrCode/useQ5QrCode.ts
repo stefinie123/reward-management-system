@@ -14,10 +14,9 @@
 import React, { useEffect } from "react";
 import useQ5QrCodeResponsiveSize from "./useQ5QrCodeResponsiveSize";
 import { useAuthContext } from "@asgardeo/auth-react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { CardDetails, Reward } from "src/api/types";
 import { generateQR, getCardDetails, getRewardDetails } from "src/api/api";
-import { useNavigate } from "react-router-dom";
 
 /* These are the possible values for the current variant. Use this to change the currentVariant dynamically.
 Please don't modify */
